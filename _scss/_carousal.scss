@@ -1,0 +1,39 @@
+
+#mycarousel {
+
+    .carousel-item{
+        height: 100%;
+
+        img{
+            height: calc(100vh - 6rem)!important;
+            width:100vw !important;
+            // -webkit-filter: blur(3px);
+            // filter: blur(3px);
+        }
+        .carousel-caption{
+            background-color: $transparent-white;
+            padding: 2rem 2rem;
+            margin:auto;
+            top: 25%;
+            bottom: auto;
+            right: 15%;
+            left: 15%;
+            color : inherit;
+
+            h1{
+                font-size: 125%;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            p {
+                font-size: 125%;
+                text-align: center;
+            }
+        }
+    }
+
+    .carousel-inner{
+        height: 100% !important;
+    }
+
+}

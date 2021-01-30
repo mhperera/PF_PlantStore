@@ -1,0 +1,84 @@
+.navbar{
+    padding: 0 !important;
+}
+.nav-item{
+    padding: 1rem 0.25rem;
+    transition: all 0.5s;
+    // width: 9rem;
+    text-align: center;
+    
+    &:hover , &:active{
+        background-color: #ffffff;
+    }
+}
+
+.navbar-brand{
+    color : $white !important;
+    font-size: 1.75rem;
+}
+
+.bg-light{
+    background-color: $primary-color !important;
+}
+
+.nav-link{
+    font-size: 1.05rem;
+    color : $white !important;
+    padding : 0.25rem 0.25rem;
+    /* font-weight: bold;*/
+
+    &:hover{
+        color : $black !important;
+    }
+}
+
+.navbar-text{
+    padding: 0.5rem;
+    font-size: 1rem;
+    color :  $white !important;
+    display: inline-block;
+    // width: 230px;
+}
+
+.navbar-nav{
+    width: auto;
+    top: 0;
+    bottom: 0;
+    position: relative;
+}
+
+.navbar-nav.navbar-right{
+    .nav-item{
+        padding: 0.25rem;
+        transition: all 0.5s;
+        // width: 9rem;
+        text-align: center;
+        
+        &:hover , &:active{
+            background-color: transparent; 
+        }
+    }
+}
+
+@media (max-width: 1280px){
+    .navbar-text{
+        font-size: 1.0rem;
+        display: block;
+        padding: 0.25rem;
+        text-align: right;
+        margin-left: auto !important;
+    }
+    .navbar-text.nav-text-contacts{
+        display: inline-block;
+       
+    }
+}
+@media (max-width: 992px){
+    .navbar-text{
+        display: inline-block;
+        margin: auto !important;
+    }
+    .navbar-text.nav-text-contacts{
+        display: inline-block;
+    }
+}

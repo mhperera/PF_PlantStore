@@ -1,0 +1,9 @@
+.breadcrumb {
+    background-color: $white;
+    padding: 0.2rem 2rem;
+    color: $black !important;
+    margin: 0;
+}
+.breadcrumb-item.active a{
+    color :$black;
+}

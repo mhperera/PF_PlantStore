@@ -1,0 +1,32 @@
+#footer-container{
+    color : $light-white;
+    background-color: $dark_black;
+    padding: 2rem 1rem 1rem 1rem;
+
+    ul{
+        list-style-image : url('../_images/icons/list-bullet.png');
+    }
+
+    div#social-media-icons-list{
+        width: 100%;
+        font-size: 2rem;
+        margin-left : 1rem;
+
+        li{
+            margin : 0 0.5rem;
+        }
+    }
+    
+    a{
+        color : inherit;
+    }
+}
+
+#bottom-line{
+    background-color: $grey;
+    color : $light-white;
+    padding: 0.5rem;
+    p{
+        text-align: center;
+    }
+}

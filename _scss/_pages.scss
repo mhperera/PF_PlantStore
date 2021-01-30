@@ -1,0 +1,171 @@
+/************************************** HOME PAGE ***********************************/
+#slider{
+
+    .owl-carousel .owl-item img{
+        // height : 200px !important;
+        border : $light-gray 2px solid;
+    }
+    .owl-nav{
+        height:100%;
+
+        [class*="owl-"]{
+            color: $dark-gray;
+            font-size: 2rem;
+            margin: 5px;
+            padding: 4px 7px;
+            background: transparent;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    }
+    .owl-dots{
+        margin-top: 2rem;
+
+        span{
+            background-color: $gray;
+        }
+        .owl-dot.active{
+            span{
+                background-color: $black;
+            }
+        }
+    }
+}
+
+
+/************************************** serviceS PAGE ***********************************/
+.service-header{
+    background: url('./../_images/services/service-n/header-background.jpg');
+    background-position: right center;
+    color : $transparent-white;
+}
+.service-main-image{
+    -ms-transform: skewY(3deg);
+    transform: skewY(3deg);
+    margin: 2rem 0rem;
+    // box-shadow: $blacky-gray 15px 15px 15px -10px;
+    transition: ease 0.5s;
+    padding: 0.75rem;
+    background-color: $white;
+
+    &:hover{
+        -ms-transform: skewY(4deg);
+        transform: skewY(4deg);
+        // box-shadow: $blacky-gray 18px 18px 18px -10px;
+    }
+}
+
+.service-main-heading {
+    
+    h1 , h2 {
+        color : inherit;
+        font-style: italic;
+        text-decoration: underline;
+        display: inline;
+        margin-left : 0.5rem;
+        
+    }
+}
+.subcontent-header{
+    background-color: $grey;
+    width: 60%;
+    background-position: right top;
+    background-size: cover;
+    color:$black;
+}
+.service-sub-heading{
+    font-size: 2em;
+    color : $white;
+    text-transform: uppercase;
+    margin: auto;
+}
+.service-key-features{
+    padding: 2rem 2rem;
+    border: solid 2px $gray;
+
+    h4{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.bg-image{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/************************************** ABOUT US PAGE ***********************************/
+
+.banner{
+    background-size: cover;
+    overflow: hidden;
+    padding: 0 0;
+
+    .banner-heading{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .banner-description{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .banner-inner{
+        background-color: $transparent-white;
+        padding: 2rem;
+    }
+}
+#banner-about{
+    background-image: url('../_images/banner-about.jpg') !important;
+    background-position: right center;
+    color : $black; 
+}
+.vision-image-wrapper , .vision-text-wrapper , .mission-image-wrapper , .mission-text-wrapper {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    -webkit-clip-path: polygon(0px 0%, 95% 0px, 100% 100%, 5% 100%);
+    clip-path: polygon(0px 0%, 95% 0px, 100% 100%, 5% 100%);
+
+    img{
+        width: 110%;
+        height:auto;
+        transition: all 0.5s;
+
+        &:hover{
+            -webkit-transform : scale(1.1);
+            scale:1.1;
+        }
+        
+    }
+}
+
+.vision-text-wrapper , .mission-text-wrapper{
+    background-color: $white;
+    padding: 0.5rem 1rem;
+
+    p{
+        padding: 0 1rem;
+        margin: 0;
+    }
+
+}
+
+.vision-heading , .mission-heading{
+    text-align: center;
+    font-weight: bold;
+}
+
+/************************************** CONTACT US PAGE ***********************************/
+
+#map iframe{
+    height : 250px;
+    width: 100%;
+}

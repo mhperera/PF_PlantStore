@@ -1,0 +1,43 @@
+.form-label{
+    display: none;
+}
+.form-control {
+    background-color: transparent;
+	border-radius: 0;
+	border-color: $gray;
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+    box-shadow: none;
+
+    &:focus {
+        background-color: transparent;
+        box-shadow: none;
+        border-color: $dark-gray;
+    }
+
+    .js-hide-label {
+        opacity: 0; 
+    }
+}
+
+.js-unhighlight-label {
+	color: $white; 
+}
+.btn-start-order {
+    border: 1px solid $dark-gray;
+    background-color: $dark-gray;
+    border-radius: 3px;
+    color: $white;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    padding : 0.5rem 2rem ;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+
+    &:hover , &:active , &:focus{
+        border-color:$darker-gray;
+        background-color: $darker-gray ;
+        color:$white;
+    }
+}
